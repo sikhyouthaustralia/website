@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
-    "hover": "Hover#^2.1.0"
+    "hover": "Hover#^2.1.0",
+    "jquery-1.12.4.min": "https://code.jquery.com/jquery-1.12.4.min.js"
   },
   "overrides": {
     "bootstrap-sass": {

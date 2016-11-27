@@ -1,5 +1,8 @@
 {
   "private": true,
+  "dependencies": {
+    "jquery": "1.12.4"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.2",
     "grunt": "^0.4.5",
