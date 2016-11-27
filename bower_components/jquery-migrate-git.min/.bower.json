@@ -1,0 +1,14 @@
+{
+  "name": "jquery-migrate-git.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"58381cc7-1ee2\"",
+    "Last-Modified": "Fri, 25 Nov 2016 11:13:11 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"58381cc",
+  "main": "index.js",
+  "_source": "https://code.jquery.com/jquery-migrate-git.min.js",
+  "_target": "*",
+  "_originalSource": "https://code.jquery.com/jquery-migrate-git.min.js",
+  "_direct": true
+}
