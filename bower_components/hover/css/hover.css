@@ -1203,7 +1203,11 @@
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background-color: #f38250;
+=======
+  background-color: #2098D1;
+>>>>>>> Initial Commot
   color: white;
 }
 
@@ -1241,7 +1245,12 @@
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background-color: #f38250;
+=======
+  background-color: #2098D1;
+  background-color: #2098d1;
+>>>>>>> Initial Commot
   color: white;
 }
 
@@ -1257,7 +1266,10 @@
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background-color: #f38250;
+=======
+>>>>>>> Initial Commot
 }
 .hvr-sweep-to-right:before {
   content: "";
@@ -1267,7 +1279,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1308,7 +1324,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -1349,7 +1369,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -1390,7 +1414,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -1431,7 +1459,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -1474,7 +1506,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -1517,7 +1553,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -1560,7 +1600,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -1605,7 +1649,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   border-radius: 100%;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -1633,7 +1681,11 @@
   box-shadow: 0 0 1px transparent;
   position: relative;
   overflow: hidden;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -1674,7 +1726,11 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -1728,7 +1784,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -1754,7 +1814,11 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -1810,7 +1874,11 @@
   bottom: 0;
   left: 0;
   right: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
@@ -1838,7 +1906,11 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -1894,7 +1966,11 @@
   bottom: 0;
   left: 0;
   right: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
@@ -1930,7 +2006,11 @@
   /* Hack to improve aliasing on mobile/tablet devices */
 }
 .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   box-shadow: inset 0 0 0 4px #f38250, 0 0 1px transparent;
+=======
+  box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px transparent;
+>>>>>>> Initial Commot
   /* Hack to improve aliasing on mobile/tablet devices */
 }
 
@@ -2160,7 +2240,11 @@
   left: 0;
   right: 100%;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -2190,7 +2274,11 @@
   left: 50%;
   right: 50%;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -2221,7 +2309,11 @@
   left: 100%;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transition-property: left;
   transition-property: left;
@@ -2251,7 +2343,11 @@
   left: 0;
   right: 100%;
   top: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -2281,7 +2377,11 @@
   left: 50%;
   right: 50%;
   top: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -2312,7 +2412,11 @@
   left: 100%;
   right: 0;
   top: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transition-property: left;
   transition-property: left;
@@ -2343,7 +2447,11 @@
   right: 0;
   top: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   border-color: #f38250;
+=======
+  border-color: #2098D1;
+>>>>>>> Initial Commot
   border-style: solid;
   border-width: 0;
   -webkit-transition-property: border-width;
@@ -2376,7 +2484,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
@@ -2409,7 +2521,11 @@
   left: 0;
   right: 0;
   top: 0;
+<<<<<<< f16db6036a93bf436ba980993e96f99f0f619b6c
   background: #f38250;
+=======
+  background: #2098D1;
+>>>>>>> Initial Commot
   height: 4px;
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px);
