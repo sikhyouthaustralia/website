@@ -47,7 +47,7 @@
       "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/",
       "svgExt": ".svg",
       "source": {
-        "concatemoji": "http:\/\/titanium.ljmilev.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"
+        "concatemoji": "./wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"
       }
     };
     ! function(a, b, c) {
@@ -335,8 +335,13 @@
   <link rel="stylesheet" id="responsive-css" href="./styles/responsive.css?ver=4.6.1" type="text/css" media="all">
   <link rel="stylesheet" id="skya-css" href="./styles/skya.css" type="text/css" media="all">
   <link rel="stylesheet" href="./bower_components/hover/css/hover.css">
-  <script type="text/javascript" src="http://titanium.ljmilev.com/wp-includes/js/jquery/jquery.js?ver=1.12.4">
-  </script>
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/jquery-1.12.4.min/index.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
   <script type="text/javascript" src="http://titanium.ljmilev.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1">
   </script>
   <script type="text/javascript" src="http://titanium.ljmilev.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6">
