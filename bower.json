@@ -5,7 +5,11 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
     "hover": "Hover#^2.1.0",
-    "jquery-1.12.4.min": "https://code.jquery.com/jquery-1.12.4.min.js"
+    "jquery-1.12.4.min": "https://code.jquery.com/jquery-1.12.4.min.js",
+    "jquery-migrate": "https://github.com/jquery/jquery-migrate.git#^3.0.0",
+    "jquery-migrate-git.min": "https://code.jquery.com/jquery-migrate-git.min.js",
+    "themepunch": "https://gist.github.com/9f13bca8b7743b409927.git",
+    "parallax.js": "^1.4.2"
   },
   "overrides": {
     "bootstrap-sass": {
