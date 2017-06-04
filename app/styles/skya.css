@@ -199,7 +199,7 @@ footer a:hover {
 
   #navigation>ul>li:hover>a,
   #navigation>ul>li>a:hover {
-    color: #1abc9c;
+    color: #f79f33;
   }
 
   #navigation li.current-menu-item>a:hover,
@@ -208,7 +208,7 @@ footer a:hover {
   #navigation li.current-menu-parent>a:hover,
   #navigation li.current_page_ancestor>a:hover,
   #navigation>ul>li.sfHover>a {
-    color: #1abc9c;
+    color: #f79f33;
   }
 
   #navigation li.current-menu-item>a,
@@ -216,7 +216,7 @@ footer a:hover {
   #navigation li.current-menu-ancestor>a,
   #navigation li.current-menu-parent>a,
   #navigation li.current_page_ancestor>a {
-    color: #1abc9c;
+    color: #f79f33;
   }
 
   #navigation ul li:hover {
@@ -228,7 +228,7 @@ footer a:hover {
   #navigation li.current-menu-ancestor,
   #navigation li.current-menu-parent,
   #navigation li.current_page_ancestor {
-    border-color: #1abc9c;
+    border-color: #f79f33;
   }
 
   #navigation .sub-menu {
@@ -497,11 +497,13 @@ footer a:hover {
     color: #ffffff;
   }
 
-  #footer {
+  #footer{
     color: #888888;
     border-top: 4px none #1abc9c;
   }
-
+ #menu{
+   background-color: #6D6E70;
+ }
   #footer {
     background-color: #6D6E70;
   }
@@ -944,4 +946,118 @@ footer a:hover {
   }
   a:hover {
     color: red;
+}
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #6D6E70;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #f79f33;
+}
+div.gallery {
+  padding-right: 0px;
+  padding-left: 2px;
+  border-bottom-width: 0px;
+  margin-top: 0px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
 }
