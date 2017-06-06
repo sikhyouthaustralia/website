@@ -909,7 +909,7 @@ a.catimage:hover .catimage-text{
 	clear: both;
 	height:1px;
 	width:100%;
-	background: url(../images/dotted.png) repeat-x;
+	background: url(../images/dotted.619d669d.png) repeat-x;
 	margin:50px 0;
 	height:1px;
 }
@@ -917,7 +917,7 @@ a.catimage:hover .catimage-text{
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
       
 	.divider2{
-		background-image: url(../images/dotted@2x.png);
+		background-image: url(../images/dotted@2x.05a88016.png);
 		background-size:  4px 1px;
 	}
 
@@ -925,7 +925,7 @@ a.catimage:hover .catimage-text{
 
 .divider3{
 	height:25px;
-	background: url(../images/shadow.png) no-repeat center center;
+	background: url(../images/shadow.56b692d0.png) no-repeat center center;
 	width:100%;
 	margin:50px 0;
 }
@@ -935,14 +935,14 @@ a.catimage:hover .catimage-text{
 	margin:50px 0;
 	width:100%;
 	height:14px;
-	background: url(../images/stripes.png);
+	background: url(../images/stripes.80575f33.png);
 	display: block;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
       
 	.divider4{
-		background-image: url(../images/stripes@2x.png);
+		background-image: url(../images/stripes@2x.adac170a.png);
 		background-size:  5px 5px;
 	}
 
@@ -3898,7 +3898,7 @@ ul.wpb_thumbnails-fluid > li,
     width: 18px;
     height: 18px;
     display: block;
-    background: url(../images/accordion-open.png) no-repeat center center;
+    background: url(../images/accordion-open.05447af1.png) no-repeat center center;
     margin: 15px 15px 15px 15px;
     border-radius: 0px;
     cursor: pointer;
@@ -3909,7 +3909,7 @@ ul.wpb_thumbnails-fluid > li,
             transition: all 0.07s ease;
 }
 .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
-  background-image: url(../images/accordion-close.png);
+  background-image: url(../images/accordion-close.26da7b1b.png);
 }
 .wpb_accordion .wpb_accordion_wrapper .ui-state-active.wpb_accordion_header a{
     color: #44bdbd;
@@ -3928,12 +3928,12 @@ ul.wpb_thumbnails-fluid > li,
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
       
 	.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon{
-		background-image:url(../images/accordion-open@2x.png);
+		background-image:url(../images/accordion-open@2x.d1e82989.png);
 		background-size:10px 10px;
 	}
 
 	.wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
-		background-image: url(../images/accordion-close@2x.png);
+		background-image: url(../images/accordion-close@2x.96dbee6c.png);
 		background-size:10px 10px;
 	}
 

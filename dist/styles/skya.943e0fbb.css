@@ -1004,6 +1004,7 @@ ul.rig {
 	list-style: none;
 	font-size: 0px;
 	margin-left: -2.5%; /* should match li left margin */
+  margin-right: -2.5%;
 }
 ul.rig li {
 	display: inline-block;
@@ -1019,7 +1020,12 @@ ul.rig li {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-ul.rig li img {
+ul.rig li img{
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.rig li div{
 	max-width: 100%;
 	height: auto;
 	margin: 0 0 10px;
@@ -1038,7 +1044,7 @@ ul.rig.columns-2 li {
 }
 /* class for 3 columns */
 ul.rig.columns-3 li {
-	width: 30.83%; /* this value + 2.5 should = 33% */
+	width: 27.00%; /* this value + 2.5 should = 33% */
 }
 /* class for 4 columns */
 ul.rig.columns-4 li {
