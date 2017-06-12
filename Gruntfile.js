@@ -246,7 +246,12 @@ module.exports = function (grunt) {
           '<%= config.dist %>',
           '<%= config.dist %>/images',
           '<%= config.dist %>/styles'
-        ]
+        ],
+        patterns: {
+            js: [
+                [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp))/gm, 'Update the JS to reference our revved images']
+            ]
+        }
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
       css: ['<%= config.dist %>/styles/{,*/}*.css']
@@ -334,9 +339,13 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/**/*',
+            'wp-content/**/*',
+            'wp-includes/**/*',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/**/*',
+            'bower_components/slick-carousel/slick/*.css',
+            'bower_components/slick-carousel/slick/fonts/*'
           ]
         }, {
           expand: true,
