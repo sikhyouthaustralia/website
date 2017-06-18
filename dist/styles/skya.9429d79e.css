@@ -1008,8 +1008,8 @@ ul.rig {
 }
 ul.rig li {
 	display: inline-block;
-	padding: 10px;
-	margin: 0 0 2.5% 2.5%;
+	/*padding: 10px;*/
+	margin: 0 0 0.01% 0.01%;
 	background: #fff;
 	border: 1px solid #ddd;
 	font-size: 16px;
@@ -1068,9 +1068,10 @@ ul.rig.columns-4 li {
 	}
 }
 .wrapper .text {
-  background-color: #F79F33;
-  color: white;
-  font-size: 16px;
+  /*background-color: #F79F33;*/
+  color: #F79F33;
+  font-size: 26px;
+  font-weight: bold;
   /*padding: 16px 32px;*/
   visibility:hidden;
   border-radius: 25px;
@@ -1116,7 +1117,7 @@ h1, p {
 }
 
 .caption:hover::before {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(1, 1, 1, .5);
 }
 
 .caption__media {
@@ -1167,7 +1168,7 @@ h1, p {
   transition: background-color 1s;
 }
 .initiatives:hover {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(255,255,255,0.5);
 }
 .initiatives:before {
   position: absolute;

@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: red;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: 40px;
+    left: -25px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +97,7 @@
 
 .slick-next
 {
-    right: 40px;
+    right: -25px;
 }
 [dir='rtl'] .slick-next
 {

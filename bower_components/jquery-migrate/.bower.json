@@ -10,6 +10,5 @@
   },
   "_source": "https://github.com/jquery/jquery-migrate.git",
   "_target": "^3.0.0",
-  "_originalSource": "https://github.com/jquery/jquery-migrate.git",
-  "_direct": true
+  "_originalSource": "https://github.com/jquery/jquery-migrate.git"
 }

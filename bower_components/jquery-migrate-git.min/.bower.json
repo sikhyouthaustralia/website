@@ -9,6 +9,5 @@
   "main": "index.js",
   "_source": "https://code.jquery.com/jquery-migrate-git.min.js",
   "_target": "*",
-  "_originalSource": "https://code.jquery.com/jquery-migrate-git.min.js",
-  "_direct": true
+  "_originalSource": "https://code.jquery.com/jquery-migrate-git.min.js"
 }

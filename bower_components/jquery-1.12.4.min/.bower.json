@@ -10,6 +10,5 @@
   "main": "index.js",
   "_source": "https://code.jquery.com/jquery-1.12.4.min.js",
   "_target": "*",
-  "_originalSource": "https://code.jquery.com/jquery-1.12.4.min.js",
-  "_direct": true
+  "_originalSource": "https://code.jquery.com/jquery-1.12.4.min.js"
 }
