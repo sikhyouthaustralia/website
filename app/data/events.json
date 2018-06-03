@@ -1,0 +1,43 @@
+[{
+    "fields": {
+        "image": "https://www.sikhyouthaustralia.com/images/sized/images/uploads/events/Future_Leaders_Program_1-102x102.jpg",
+        "link": "https://sikhyouthaustralia.com/events/sya-future-leaders-program-2017/",
+        "name": "SYA Future Leaders Program 2017"
+    },
+    "model": "news"
+}, {
+    "fields": {
+        "image": "https://www.sikhyouthaustralia.com/images/sized/images/uploads/events/12716306_10154234981851531_3904494252824672514_o-102x102.jpg",
+        "link": "https://sikhyouthaustralia.com/events/19th-annual-summer-camp-2017/",
+        "name": "SYA’s 19th Annual Summer Camp 2017"
+    },
+    "model": "news"
+}, {
+    "fields": {
+        "image": "https://www.sikhyouthaustralia.com/images/sized/images/uploads/events/PX2t-102x102.jpg",
+        "link": "https://sikhyouthaustralia.com/events/px2-self-development-workshop/",
+        "name": "PX2 Self-Development Workshop Parramatta"
+    },
+    "model": "news"
+}, {
+    "fields": {
+        "image": "https://www.sikhyouthaustralia.com/images/sized/images/uploads/events/mkfd_half_1-102x102.JPG",
+        "link": "https://sikhyouthaustralia.com/events/mighty-khalsa-fun-day21/",
+        "name": "Mighty Khalsa Fun Day Canberra"
+    },
+    "model": "news"
+}, {
+    "fields": {
+        "image": "https://www.sikhyouthaustralia.com/images/sized/images/uploads/events/MKFDT-102x102.jpg",
+        "link": "https://sikhyouthaustralia.com/events/mighty-khalsa-fun-day-minto/",
+        "name": "Mighty Khalsa Fun Day Minto"
+    },
+    "model": "news"
+}, {
+    "fields": {
+        "image": "https://www.sikhyouthaustralia.com/images/sized/images/uploads/events/SYAYTt-102x102.jpg",
+        "link": "https://sikhyouthaustralia.com/events/future-leaders-program/",
+        "name": "SYA Future Leaders Program"
+    },
+    "model": "news"
+}]

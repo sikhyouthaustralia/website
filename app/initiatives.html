@@ -50,6 +50,7 @@
   <link rel="stylesheet" id="skya-css" href="/styles/skya.css" type="text/css" media="all">
   <link rel="stylesheet" id="slick" href="/bower_components/slick-carousel/slick/slick.css" />
   <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
+  <link rel="stylesheet" id="w3" href="/bower_components/w3/index.css" />
   <link rel="stylesheet" href="/styles/set1.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/styles/set2.css" type="text/css" media="all" />
 
@@ -60,7 +61,7 @@
 
 <body data-gr-c-s-loaded="true" style="background-color: rgb(27, 27, 27);" cz-shortcut-listen="true" tcap-name="mainman">
   <div class="site-wrapper wrapall">
-    <header id="header" class="header header-v1 header-v1-only clearfix" style="background-color: #6D6E70;">
+    <header id="header-index" class="header header-v1 header-v1-only clearfix  navbar-fixed-top" style="background-color: #6D6E70;">
       <div id="menu" class="container">
         <div id="logo-navigation" class="sixteen columns">
           <div id="logo" class="logo">
@@ -69,25 +70,98 @@
             </a>
           </div>
           <div id="navigation" class="clearfix">
-            <div class="header-icons">
-              <a href="#!" target="_self" class="button medium" style="border-radius: 1px;background: transparent; border-color: #f79f33; border: 2px solid #f79f33; color: #f79f33; margin-top: 25px; font-weight: 700">DONATE
-NOW</a> <span class="cart-popup"><a href="#!" target="_self" class=
+            <div class="header-icons responsive">
+              <!-- <div class="header-icons-divider"></div> -->
+              <button id="customButton" onclick="document.getElementById('id01').style.display='block'" target="_self" class="button medium" style="border-radius: 1px;background: transparent; border-color: #f79f33; border: 2px solid #f79f33; color: #f79f33; margin-top: 25px; font-weight: 700">DONATE NOW</button>
+              <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                  <!-- <div class="w3-center"><br>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button close w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                    <a onclick="document.getElementById('id01').style.display='none'" title="Close" class="close">X</a>
+                    <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                  </div> -->
+
+                  <form id="openModal" class="w3-container modalDialog form-style-8 donate" data-validate>
+
+                    <div class="form-row"><a id="close" onclick="document.getElementById('id01').style.display='none'" title="Close" class="close">X</a>
+                      <div>
+                        <b>DONATE TO SIKH YOUTH AUSTRALIA</b></br>
+                        <small>Sikh Youth Australia is a non-profit organization, registered as a charitable entity by the Australian Taxation Office.</br>
+                        Sewadars all provide their services on a volunteer basis.</br>
+                        We are not affiliated to any Gurdwara and are totally dependent on contributions from our supporters. Any donation you provide we help us maintain this sewa.</br>
+                      </small></div>
+                      </br>
+                      <fieldset id="donateFields">
+                        <div id="card-element"></div>
+                        <input class="InputElement is-complete" type="text" name="cardholder-name" placeholder="Full Name" required/>
+                        <input class="InputElement is-complete" type="email" name="cardholder-email" placeholder="Email" required/>
+                        <!-- <input id="subscriptions" class="InputElement is-complete" type="text" list="frequency" name="frequency" placeholder="Payment Subscription" required/> -->
+                        <div class="col-25">
+                          <label for="planfrequency">Select Your Payment Subscription</label>
+                        </div>
+                        <div id="frequency" class="planlist">
+                          <div id="subscriptions" class="selectWrapper">
+                          </div>
+                        </div>
+                        <small><i>If you want to make a "once off" payment then please add an amount in the field below.</i></small>
+                        <input id="donationAmount" class="InputElement is-complete" type="number" placeholder="enter once off payment amount here.." step="1" max="1000" min="10" name="donation-amount" />
+                        <input class="InputElement is-complete" type="text" name="description" placeholder="Note" required/>
+                      </fieldset>
+                      <div id="card-errors" role="alert"></div>
+                      <div class="error error-message" role="alert">
+
+                        <span class="message"></span></div>
+
+                      <div class="align-right">
+                        <a id="donate" target="_self" class="button medium" style="border-radius: 1px;background: grey; border-color: #f79f33; border: 2px solid #f79f33; color: #f79f33; margin-top: 25px; font-weight: 700">DONATE NOW</a>
+                      </div>
+                      <div id="WaitNote" style="display: none;">
+                        <span id="paymentMessage" style="font-size:12pt;font-weight:bold;">We're processing your payment.
+                         This process may take a few seconds, so please be patient.</span>
+                      </div>
+                      <div id="WaitImage" style="display: none;">
+                        <img src="./images/sya.gif" />
+                      </div>
+                    </div>
+
+
+                    <div class="success" style="display: none;">
+                      <div class="icon">
+                        <div class="align-centre" id="progress"></div>
+                      </div>
+                      <h3 class="title" data-tid="elements_examples.success.title">Payment successful</h3>
+                      <p class="message"><span data-tid="elements_examples.success.message"></span></p>
+                      <a class="reset" href="#">
+                        <!-- <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <path fill="#000000" d="M15,7.05492878 C10.5000495,7.55237307 7,11.3674463 7,16 C7,20.9705627 11.0294373,25 16,25 C20.9705627,25 25,20.9705627 25,16 C25,15.3627484 24.4834055,14.8461538 23.8461538,14.8461538 C23.2089022,14.8461538 22.6923077,15.3627484 22.6923077,16 C22.6923077,19.6960595 19.6960595,22.6923077 16,22.6923077 C12.3039405,22.6923077 9.30769231,19.6960595 9.30769231,16 C9.30769231,12.3039405 12.3039405,9.30769231 16,9.30769231 L16,12.0841673 C16,12.1800431 16.0275652,12.2738974 16.0794108,12.354546 C16.2287368,12.5868311 16.5380938,12.6540826 16.7703788,12.5047565 L22.3457501,8.92058924 L22.3457501,8.92058924 C22.4060014,8.88185624 22.4572275,8.83063012 22.4959605,8.7703788 C22.6452866,8.53809377 22.5780351,8.22873685 22.3457501,8.07941076 L22.3457501,8.07941076 L16.7703788,4.49524351 C16.6897301,4.44339794 16.5958758,4.41583275 16.5,4.41583275 C16.2238576,4.41583275 16,4.63969037 16,4.91583275 L16,7 L15,7 L15,7.05492878 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z"></path>
+                      </svg> -->
+                      </a>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+              <span class="cart-popup"><button href="https://theturbanshop.com/" target="_self" class=
 "button medium" style=
 "border-radius: 1px;background: transparent; border-color: #f79f33; border: 2px solid #f79f33; color: #f79f33; margin-top: 25px; font-weight: 700">
-SHOP</a></span></div>
+SHOP</button></span>
+            </div>
             <ul id="nav" class="menu sf-js-enabled sf-arrows">
               <li id="menu-item-4888" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='rgb(255, 255, 255)'" style="color: rgb(255, 255, 255);">HOME</a></li>
+                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#FFF';" style="color:rgb(255, 255, 255);">HOME</a></li>
               <li id="menu-item-4889" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#aboutUs" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='rgb(255, 255, 255)'" style="color: rgb(255, 255, 255);">ABOUT US</a></li>
+                <a href="#aboutUs" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#FFF'" style="color:rgb(255, 255, 255);">ABOUT US</a></li>
               <li id="menu-item-48890" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="initiatives.html" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#f79f33'" style="color: '#f79f33';">INITIATIVES</a></li>
+                <a href="./initiatives.html" class="sf-with-ul" style="color:rgb(247, 159, 51);">INITIATIVES</a></li>
               <li id="menu-item-48891" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='rgb(255, 255, 255)'" style="color: rgb(255, 255, 255);">BLOG</a></li>
+                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#FFF'" style="color:rgb(255, 255, 255);">BLOG</a></li>
               <li id="menu-item-48892" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='rgb(255, 255, 255)" style="color: rgb(255, 255, 255);">RESOURCES</a></li>
+                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#FFF'" style="color:rgb(255, 255, 255);">RESOURCES</a></li>
               <li id="menu-item-48893" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='rgb(255, 255, 255)'" style="color: rgb(255, 255, 255);">CONTACT US</a></li>
+                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#FFF'" style="color:rgb(255, 255, 255);">CONTACT US</a></li>
+              <li id="menu-item-48894" class="megamenu columns-5 menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/" class="sf-with-ul" onmouseover="this.style.color='#f79f33'" onmouseout="this.style.color='#FFF'"><i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
@@ -135,7 +209,7 @@ SHOP</a></span></div>
 
           <div class="col span_12 color-dark text-align-center">
             <div class="vc_col-sm-12 wpb_column column_container col no-padding color-dark" style="" data-animation="" data-delay="">
-              <div class="wpb_wrapper">
+              <div class="wpb_wrapper" style="padding-top: 100px;">
                 <h1 class="headline font-inherit fontsize-xxxxl fontweight-700 lh-inherit align-center transform-inherit" style="margin: 0 0 20px 0; color: #f79f33;">INITIATIVES</h1>
               </div>
               <div class="wpb_row">
@@ -159,7 +233,7 @@ SHOP</a></span></div>
                 <ul class="rig columns-3">
                   <li>
                     <a href="summercamp.html">
-                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/ANNUAL SUMMER CAMP.jpg');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/Annual Summer Camp.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
                         <div class="caption__overlay">
                           <h3 class="caption__overlay__title text">Summer Camp</h3>
                           <p class="text">The SYA Summer Camp is an opportunity to make new friends & have fun, whilst also having the ability to immerse in knowledge and understanding of Sikhism.</p>
@@ -169,17 +243,17 @@ SHOP</a></span></div>
                   </li>
                   <li>
                     <a href="globaltours.html">
-                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/GLOBAL TOURS.jpg');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/globaltours.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
                         <div class="caption__overlay">
-                          <h3 class="caption__overlay__title text">Global Toure Camp</h3>
-                          <p class="text">Need content for this one.</p>
+                          <h3 class="caption__overlay__title text">Global Tours</h3>
+                          <p class="text">These Global Tours are the perfect opportunity to immerse yourself in the knowledge and understanding of Sikhism.</p>
                         </div>
                       </div>
                     </a>
                   </li>
                   <li>
                     <a href="mightykhalsa.html">
-                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/MIGHTY KHALSA FUN DAY .jpg');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/mightykhalsa.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
                         <div class="caption__overlay">
                           <h3 class="caption__overlay__title text">Mighty Khalsa Fun Day</h3>
                           <p class="text">Mighty Khalsa Fun Day is a must go to for all kids to learn about Sikhi & take part it some exciting outdoor activities!</p>
@@ -189,17 +263,17 @@ SHOP</a></span></div>
                   </li>
                   <li>
                     <a href="culturecare.html">
-                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/CULTURE CARE.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/culturecare.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
                         <div class="caption__overlay">
                           <h3 class="caption__overlay__title text">Culture Care</h3>
-                          <p class="text">Need content for this one.</p>
+                          <p class="text">Culture Care is a social healthcare initiative developed by senior youth from Sikh Youth Australia providing healthcare programs to the Punjabi and wider migrant community.</p>
                         </div>
                       </div>
                     </a>
                   </li>
                   <li>
                     <a href="futureleaders.html">
-                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/FUTURE LEADERS PROGRAM.jpg');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/flp.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
                         <div class="caption__overlay">
                           <h3 class="caption__overlay__title text">Future Leaders Program</h3>
                           <p class="text">Providing Young Adults with the opportunity to develop their leadership skills, giving them a competitive edge in today’s fast paced world.</p>
@@ -208,8 +282,8 @@ SHOP</a></span></div>
                     </a>
                   </li>
                   <li>
-                    <a href="yspn.html">
-                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/Young Sikh Professionals Network.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                    <a href="https://www.yspn.org.au">
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/yspn.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
                         <div class="caption__overlay">
                           <h3 class="caption__overlay__title text">Young Sikh Professionals Network (YSPN)</h3>
                           <p class="text">YSPN is a platform created for young Sikhs to build professional connections, succeed, amplify their influence and contribute to the development of the Sikh & broader Australian community.</p>
@@ -219,13 +293,13 @@ SHOP</a></span></div>
                   </li>
                   <li>
                     <a href="sikhtogive.html">
-                    <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/SIKH TO GIVE.jpg');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
-                      <div class="caption__overlay">
-                        <h3 class="caption__overlay__title text">Sikh To Give</h3>
-                        <p class="text">Need content for this one.</p>
+                      <div class="wrapper caption caption_media" style="background-image: url('./images/initiatives/sikhtogive.png');max-width=100%; max-height=100%; padding-top: 250px;padding-bottom: 100px">
+                        <div class="caption__overlay">
+                          <h3 class="caption__overlay__title text">Sikh To Give</h3>
+                          <p class="text">Sikh to Give (S2G) is a charity team established as an initiative of Sikh Youth Australia, to support the underprivileged within the wider Australian community.</p>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -379,6 +453,12 @@ SHOP</a></span></div>
     <script src="/bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <script src="/bower_components/animation.gsap/index.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
+    <script src="/bower_components/stripe/index.js"></script>
+    <script src="/bower_components/validate/dist/js/validate.min.js"></script>
+    <script src="/bower_components/progressbar.js/dist/progressbar.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/bower_components/JavaScript-MD5/js/md5.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->

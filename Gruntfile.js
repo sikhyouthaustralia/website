@@ -18,6 +18,8 @@ module.exports = function (grunt) {
     useminPrepare: 'grunt-usemin'
   });
 
+  grunt.loadNpmTasks('grunt-contrib-handlebars');
+  
   // Configurable paths
   var config = {
     app: 'app',
@@ -389,7 +391,17 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    }
+    },
+		handlebars: {
+			compile: {
+				options: {
+					namespace: 'Handlebars.templates'
+				},
+				files: {
+					"app/scripts/templates.js": ["app/templates//*.handlebars"]
+				}
+			}
+		}
   });
 
 

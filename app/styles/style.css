@@ -145,11 +145,12 @@ td {
 /* Base 1200px Grid
 /* ------------------------------------------------------------------------ */
 
-.container                                  { position: relative; width: 1200px; margin: 0 auto; padding: 0; }
+.container                                  { position: relative; width: 1200px; margin: 0 auto; padding: 0;}
 .container .column,
-.container .columns                         { float: left; display:inline; margin-left: 20px; margin-right: 20px; }
+.container .columns                         { float: left; display:inline; margin-left: 20px; margin-right: 20px;}
 .row                                        { margin-bottom: 40px; }
-
+.navbar-fixed-top                           { position: fixed;  left: 50%; top: 0%; transform: translateX(-50%);}
+.navbar-fixed-top-not-transparent           { position: fixed;  left: 50%; top: 0%; transform: translateX(-50%);}
 /* Nested Column Classes */
 .column.alpha, .columns.alpha               { margin-left: 0; }
 .column.omega, .columns.omega               { margin-right: 0; }
@@ -975,9 +976,9 @@ input[type="button"]{
 /* ------------------------------------------------------------------------ */
 /* Header Basic
 /* ------------------------------------------------------------------------ */
-#header {
-    position: relative;
-    background-color: #ffffff;
+#header,#header-index {
+    /*position: relative;*/
+    /* background-color: #ffffff;*/
     width: 100%;
     z-index:8000;
     box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.16);
@@ -1037,7 +1038,7 @@ input[type="button"]{
 }
 
 .header-v1 #navigation > ul > li > a {
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 15px;
 }
 

@@ -11,8 +11,15 @@
     "scrollmagic": "^2.0.5",
     "gsap": "^1.19.0",
     "animation.gsap": "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
-    "stripe": "https://js.stripe.com/v2/",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "handlebars": "^4.0.10",
+    "components-font-awesome": "^4.7.0",
+    "stripe": "/Volumes/Development/skya/app/bower_components/stripe/index.js",
+    "validate": "https://github.com/cferdinandi/validate.git#^1.0.5",
+    "stripe.js": "https://js.stripe.com/v2/",
+    "progressbar.js": "^1.0.1",
+    "jquery-ui": "^1.12.1",
+    "JavaScript-MD5": "https://github.com/blueimp/JavaScript-MD5.git#^2.10.0"
   },
   "overrides": {
     "bootstrap-sass": {

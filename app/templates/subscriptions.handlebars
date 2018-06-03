@@ -1,0 +1,9 @@
+<select id ="paymentSchedule" class="select" required>
+  <option value="Once off" label="Once off"/>
+  {{#each this}}
+      <option value="{{id}}">
+        ${{amount}} {{currency}} {{interval}}ly
+      </option>
+  {{/each}}
+          </select>
+<span class="select-icon entypo-arrow-combo"></span>

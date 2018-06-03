@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sikh Youth Donate</title>
+  <link rel="stylesheet" id="w3" href="/bower_components/w3/index.css" />
+  <link rel="stylesheet" id="font-awesome" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <style>
+    /* Full-width input fields */
+
+    input[type=text],
+    input[type=password],
+    input[type=number],
+    input[type=email],
+    select
+     {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 20px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    /* Set a style for all buttons */
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+    /* Extra styles for the cancel button */
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    /* Center the image and position the close button */
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    /* The Modal (background) */
+
+    .modal {
+      /* display: none; */
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    /* Modal Content/Box */
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%;
+      /* Could be more or less, depending on screen size */
+    }
+    /* The Close Button (x) */
+
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    /* Add Zoom Animation */
+
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+      to {
+        transform: scale(1)
+      }
+    }
+    /* Change styles for span and cancel button on extra small screens */
+
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+
+    .modalDialog>div {
+      width: 500px;
+      position: relative;
+      margin: 10% auto;
+      padding: 5px 20px 13px 20px;
+      border-radius: 10px;
+      background: #fff;
+      border: 4px solid #F59E41!important;
+    }
+    #card-errors{
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="id01" class="">
+
+    <form id="openModal" class="modal-content animate">
+      <div class="imgcontainer">
+        <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+        <i class="fa fa-gift fa-5x" aria-hidden="true" style="color:#F59E40;"></i>
+      </div>
+
+      <div class="container">
+        <div>
+          <b>DONATE TO SIKH YOUTH AUSTRALIA</b></br>
+          <small>Sikh Youth Australia is a non-profit organization, registered as a charitable entity by the Australian Taxation Office.</br>
+          Sewadars all provide their services on a volunteer basis.</br>
+          We are not affiliated to any Gurdwara and are totally dependent on contributions from our supporters. Any donation you provide we help us maintain this sewa.</br>
+        </small></div>
+        </br>
+        <fieldset id="donateFields">
+          <div id="card-element"></div>
+          <input class="InputElement is-complete" type="text" name="cardholder-name" placeholder="Full Name" required/>
+          <input class="InputElement is-complete" type="email" name="cardholder-email" placeholder="Email" required/>
+          <!-- <input id="subscriptions" class="InputElement is-complete" type="text" list="frequency" name="frequency" placeholder="Payment Subscription" required/> -->
+          <div class="col-25">
+            <label for="planfrequency">Select Your Payment Subscription</label>
+          </div>
+          <div id="frequency" class="planlist">
+            <div id="subscriptions" class="selectWrapper">
+            </div>
+          </div>
+          <small><i>If you want to make a "once off" payment then please add an amount in the field below.</i></small></br>
+          <input id="donationAmount" class="InputElement is-complete" type="number" placeholder="enter once off payment amount here.." step="1" max="1000" min="10" name="donation-amount">
+          <input class="InputElement is-complete" type="text" name="description" placeholder="Note" required/>
+        </fieldset>
+        <div id="card-errors" role="alert"></div>
+        <div class="error error-message" role="alert">
+
+          <span class="message"></span></div>
+
+        <div class="align-right">
+          <button id="donate" target="_self" class="button medium" style="border-radius: 1px;background: grey; border-color: #f79f33; border: 2px solid #f79f33; color: #f79f33; margin-top: 25px; font-weight: 700">DONATE NOW</button>
+        </div>
+        <div id="WaitNote" style="display: none;">
+          <span id="paymentMessage" style="font-size:12pt;font-weight:bold;">We're processing your payment.
+           This process may take a few seconds, so please be patient.</span>
+        </div>
+        <div id="WaitImage" style="display: none;">
+          <img src="./images/sya.gif" />
+        </div>
+      </div>
+
+
+      <div class="success" style="display: none;">
+        <div class="icon">
+          <div class="align-centre" id="progress"></div>
+        </div>
+        <!-- <h3 class="title" data-tid="elements_examples.success.title">Payment successfu</h3> -->
+        <p class="message"><span data-tid="elements_examples.success.message"></span></p>
+        <a class="reset" href="#">
+          <!-- <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+          <path fill="#000000" d="M15,7.05492878 C10.5000495,7.55237307 7,11.3674463 7,16 C7,20.9705627 11.0294373,25 16,25 C20.9705627,25 25,20.9705627 25,16 C25,15.3627484 24.4834055,14.8461538 23.8461538,14.8461538 C23.2089022,14.8461538 22.6923077,15.3627484 22.6923077,16 C22.6923077,19.6960595 19.6960595,22.6923077 16,22.6923077 C12.3039405,22.6923077 9.30769231,19.6960595 9.30769231,16 C9.30769231,12.3039405 12.3039405,9.30769231 16,9.30769231 L16,12.0841673 C16,12.1800431 16.0275652,12.2738974 16.0794108,12.354546 C16.2287368,12.5868311 16.5380938,12.6540826 16.7703788,12.5047565 L22.3457501,8.92058924 L22.3457501,8.92058924 C22.4060014,8.88185624 22.4572275,8.83063012 22.4959605,8.7703788 C22.6452866,8.53809377 22.5780351,8.22873685 22.3457501,8.07941076 L22.3457501,8.07941076 L16.7703788,4.49524351 C16.6897301,4.44339794 16.5958758,4.41583275 16.5,4.41583275 C16.2238576,4.41583275 16,4.63969037 16,4.91583275 L16,7 L15,7 L15,7.05492878 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z"></path>
+        </svg> -->
+        </a>
+      </div>
+
+    </form>
+  </div>
+
+  <script>
+    // var stripe = Stripe('pk_test_dK6CFPgvYvUDJtqpKwfjgMCj');
+    // var elements = stripe.elements();
+    //
+    // var card = elements.create('card', {
+    //   style: style
+    // });
+    // card.mount('#card-element');
+    //
+    // // var promise = stripe.createToken(card);
+    // // promise.then(function(result) {
+    // //   console.log(result);
+    // // });
+    // //Handle real-time validation errors from the card Element.
+    // card.addEventListener('change', function(event) {
+    //   var displayError = document.getElementById('card-errors');
+    //   if (event.error) {
+    //     displayError.textContent = event.error.message;
+    //   } else {
+    //     displayError.textContent = '';
+    //   }
+    // });
+  </script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/handlebars/handlebars.js"></script>
+  <script src="/bower_components/stripe/index.js"></script>
+  <script src="/bower_components/validate/dist/js/validate.min.js"></script>
+  <script src="./scripts/subscriptions.js"></script>
+  <script src="./scripts/plans.js"></script>
+  <script src="./scripts/payment.js"></script>
+</body>
+
+</html>

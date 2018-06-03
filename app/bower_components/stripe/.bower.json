@@ -1,15 +1,7 @@
 {
-  "name": "stripe.js",
-  "_cacheHeaders": {
-    "ETag": "\"5057c46acfb9a62b3dc989f65fecff57\"",
-    "Last-Modified": "Fri, 05 May 2017 20:01:42 GMT",
-    "Content-Length": "19825",
-    "Content-Type": "application/javascript"
-  },
-  "_release": "e-tag:5057c46ac",
-  "main": "index",
-  "_source": "https://js.stripe.com/v2/",
+  "name": "stripe",
+  "main": "index.js",
+  "_source": "/Volumes/Development/skya/app/bower_components/stripe/index.js",
   "_target": "*",
-  "_originalSource": "https://js.stripe.com/v2/",
-  "_direct": true
+  "_originalSource": "/Volumes/Development/skya/app/bower_components/stripe/index.js"
 }

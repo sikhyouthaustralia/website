@@ -1,0 +1,37 @@
+{
+  "name": "skya",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.3",
+    "hover": "Hover#^2.1.0",
+    "jquery-1.12.4.min": "https://code.jquery.com/jquery-1.12.4.min.js",
+    "jquery-migrate": "https://github.com/jquery/jquery-migrate.git#^3.0.0",
+    "jquery-migrate-git.min": "https://code.jquery.com/jquery-migrate-git.min.js",
+    "scrollmagic": "^2.0.5",
+    "gsap": "^1.19.0",
+    "animation.gsap": "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+    "slick-carousel": "^1.6.0",
+    "handlebars": "^4.0.10",
+    "components-font-awesome": "https://github.com/components/font-awesome.git#^4.7.0",
+    "stripe": "/Volumes/Development/skya/app/bower_components/stripe/index.js",
+    "validate": "https://github.com/cferdinandi/validate.git#^1.0.5",
+    "stripe.js": "https://js.stripe.com/v2/",
+    "progressbar.js": "^1.0.1",
+    "jquery-ui": "^1.12.1",
+    "JavaScript-MD5": "https://github.com/blueimp/JavaScript-MD5.git#^2.10.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}

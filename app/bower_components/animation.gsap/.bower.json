@@ -1,0 +1,12 @@
+{
+  "name": "animation.gsap",
+  "_cacheHeaders": {
+    "Last-Modified": "Wed, 22 Jun 2016 20:01:29 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+  "_target": "*",
+  "_originalSource": "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js",
+  "_direct": true
+}

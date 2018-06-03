@@ -1,0 +1,16 @@
+{
+  "name": "validate",
+  "homepage": "https://github.com/cferdinandi/validate",
+  "version": "1.0.5",
+  "_release": "1.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.5",
+    "commit": "2a064cd23e47456190fea7e53968c65f0775e480"
+  },
+  "_source": "https://github.com/cferdinandi/validate.git",
+  "_target": "^1.0.5",
+  "main": "./dist/js/validate.min.js",
+  "_originalSource": "https://github.com/cferdinandi/validate.git",
+  "_direct": true
+}

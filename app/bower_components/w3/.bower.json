@@ -1,0 +1,15 @@
+{
+  "name": "w3",
+  "_cacheHeaders": {
+    "ETag": "\"0e7dd69b78d31:0\"",
+    "Last-Modified": "Mon, 18 Dec 2017 14:20:54 GMT",
+    "Content-Length": "5223",
+    "Content-Type": "text/css"
+  },
+  "_release": "e-tag:0e7dd69b7",
+  "main": "index.css",
+  "_source": "https://www.w3schools.com/w3css/4/w3.css",
+  "_target": "*",
+  "_originalSource": "https://www.w3schools.com/w3css/4/w3.css",
+  "_direct": true
+}
